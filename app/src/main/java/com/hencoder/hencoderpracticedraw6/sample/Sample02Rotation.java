@@ -40,7 +40,7 @@ public class Sample02Rotation extends RelativeLayout {
             public void onClick(final View v) {
                 switch (state) {
                     case 0:
-                        imageView.animate().rotation(180);
+                        imageView.animate().rotation(90);
                         break;
                     case 1:
                         imageView.animate().rotation(0);
@@ -58,8 +58,10 @@ public class Sample02Rotation extends RelativeLayout {
                         imageView.animate().rotationY(0);
                         break;
                 }
-                state++;
-                if (state == 6) {
+
+                if (state!= 6) {
+                    state++;
+                }else{
                     state = 0;
                 }
             }

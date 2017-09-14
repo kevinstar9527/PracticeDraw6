@@ -14,6 +14,15 @@ import static com.hencoder.hencoderpracticedraw6.Utils.dpToPixel;
 public class Practice08ObjectAnimatorView extends View {
     final float radius = dpToPixel(80);
 
+    public float getProgress() {
+        return progress;
+    }
+
+    public void setProgress(float progress) {
+        this.progress = progress;
+        invalidate();
+    }
+
     RectF arcRectF = new RectF();
     Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
