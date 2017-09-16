@@ -9,6 +9,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.hencoder.hencoderpracticedraw6.MainActivity">
+
+        </activity>
+        <activity android:name=".practice_draw.MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
